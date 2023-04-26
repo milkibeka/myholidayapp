@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Safe</title>
+
+ <!--Bootstap--> 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
+<!-- CSS file -->
+ <link rel="stylesheet" href="style.css"/>
+ 
+ 
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <!-- Carousel  -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/Slide_4.png"
+                class="d-block w-100 carousel-img img-fill-container p-3"
+                
+                alt="People walking in the jungle"
+              />
+              
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/Slide-8.png"
+                class="d-block w-100 carousel-img img-fill-container p-3"
+                alt="..."
+              />
+              
+            </div>
+            <div class="carousel-item">
+                <img
+                  src="assets/Slide_1.png"
+                  class="d-block w-100 carousel-img img-fill-container p-3"
+                  alt="..."
+                />
+                <
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/7.png"
+                  class="d-block w-100 carousel-img img-fill-container p-3"
+                  alt="..."
+                />
+                
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/Slide_5.png"
+                  class="d-block w-100 carousel-img img-fill-container p-3"
+                  alt="..."
+                />
+                
+            </div>
+            <div class="carousel-item">
+                <img
+                  src="assets/Slide_3.png"
+                  class="d-block w-100 carousel-img img-fill-container p-3"
+                  alt="..."
+                />
+                
+              </div>
+            <div class="carousel-item">
+              <img
+                src="assets/6.png"
+                class="d-block w-100 carousel-img img-fill-container p-3"
+                alt="..."
+              />
+              
+            </div>
+          </div>
+          <img src="assets/Logo-Project1.png" class="dp-container container logo"/>
+        </div>
+ <!--Search country--> 
+ <section class="Header">
+  
+  <div class="card" style="width: 50rem;">
+   <div class="card-body">
+    <div class="inputcont"> 
+     <h5 class="card-title">Where would you like to go?</h5>
+     <small id="emailHelp" class="form-text text-muted" ><a href="https://www.nationsonline.org/oneworld/currencies.htm" target="_blank">Check list of currencies &larr; </a></small>
+         <form id="query-form">
+
+<div class="box1">
+  
+    <div class="card " style="width:12rem">
+        <label for="details tags" class="question">Destination Country:</label>  
+        <label for="details" class="question">Convert from:</label> 
+        <label for="details" class="question">Convert to:</label>
+        <label for="details" class="question">Amount:</label> 
+    </div>
+      
+    
+    <div class="card " style="width:12rem" >
+      
+      <input class="textfield question" id="details"
+      type="text" name="details"
+      placeholder="e.g. United Kingdom"
+      onChange="validInputs()"/>
+      <input class="answer" id="from" placeholder="e.g. USD" /> 
+      <input class="answer" id="to" placeholder="e.g. EUR" />
+      <input class="answer" id="amount" placeholder="e.g.100" />
+      </div>
+    
+</div>
+   
+      <br />
+      <input class="button" type="submit" value="SEARCH"
+             id="searchButton" />
+      <input class="button" type="button" value="RESET"
+             id="resetButton"
+             onClick="this.form.reset();resetResults()" />           
+
+<div class="box2">
+  <div class="card-deck">
+    <div class="card result">
+      <img src="assets/Covid Results.jpg" class="card-img-top" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">Covid Rates</h5>
+        <p class="card-text">   <div class="section-subheader" id="search-results-heading"></div>
+          <div class="results-div" id="results"></div></p>
+        
+      </div>
+    </div>
+
+    <div class="card result" >
+      <img src="assets/Currency.jpg" class="card-img-top " alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Your Budget</h5>
+        <p class="card-text"><h3><span id="result"></span></h3></p>
+      </div>
+      </div>
+      </div>
+    </div> 
+  </div>
+
+  </div>
+  </div>
+ </section>
+ 
+ </div>
+</body>
+    <footer>
+
+    </footer>
+
+
+ <!-- jQuery  -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+ <!-- JS file -->
+ <script src="script.js"></script>  
+</html>
+
