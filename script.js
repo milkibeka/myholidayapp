@@ -11,5 +11,5 @@ $(document).ready(function () {
   }
 
   // Set an interval to move to the next slide every 3 seconds (3000 milliseconds)
-  setInterval(moveToNextSlide, 8000);
+  setInterval(moveToNextSlide, 3000);
 });
